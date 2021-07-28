@@ -1,0 +1,30 @@
+<div [hidden]="!gotData"  fxLayout="column" fxLayoutAlign="center none" style="width: 98%;margin-left: 1%;margin-right: 1%;">
+    <div fxLayout="row" style="width: 100%;padding: 0%;" fxLayoutAlign="end center" fxFlex="100">
+        <mat-form-field fxFlex = "100" >
+            <input autocomplete="off" class="placeholder" matInput (keyup)="applyFilter($event.target.value)"
+                placeholder="Filter">
+        </mat-form-field>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" id="ExampleTable" matSort class="mat-elevation-z8" style="width:100%;" >
+        <ng-container *ngFor="let dc of displayedColumns?.slice(0,displayedColumns.length); let i=index;"
+            [matColumnDef]="dc">
+            <th mat-header-cell [hidden]="displayedColumnsAs[dc]?.visible" *matHeaderCellDef mat-sort-header
+                style="color: white;">
+                {{displayedColumnsAs[dc]?.DN}}</th>
+            <td mat-cell [hidden]="displayedColumnsAs[dc]?.visible" *matCellDef="let element">
+                {{element[dc]}}
+            </td>
+        </ng-container>
+        
+        <tr mat-header-row style="background-color:#6660be;" *matHeaderRowDef="displayedColumns">
+        </tr>
+        <tr mat-row *matRowDef="let row;let even = even;  columns: displayedColumns;"></tr>
+    </table>
+    <div *ngIf="noData === 0"  style="color: red;text-align: center;margin-top: 2%;" class="no-records">
+        No records found
+    </div>
+    <div>
+        <mat-paginator [pageSizeOptions]="[10, 20, 40]"></mat-paginator>
+    </div>
+</div>
