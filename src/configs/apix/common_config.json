@@ -1,0 +1,23 @@
+{
+    "machinestates": {
+        "ready": {
+            "display_name": "Ready"
+        },
+        "manual_stop": {
+            "display_name": "Manual Stop"
+        },
+        "waiting": {
+            "display_name": "Waiting"
+        },
+        "block": {
+            "display_name": "Block"
+        },
+        "pdt": {
+            "display_name": "PDT"
+        },
+
+        "changeover": {
+            "display_name": "Changeover"
+        }
+    }
+}
