@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('../masters/masters.module').then((m) => m.MastersModule),
+        loadChildren: () => import('../manuals/manuals.module').then((m) => m.ManualsModule),
         data: { breadcrumb: 'Masters' },
       },
     ]

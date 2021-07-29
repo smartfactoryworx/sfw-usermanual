@@ -1,14 +1,14 @@
 [
 	{
-		"title": "Tw Master Srvices",
-		"description": "All Master abc abc xyz abc abc xyz abc abc xyz abc abc xyz abc abc xyz abc abc xyz",
-		"fileDownloadLink": "../../../assets/manuals/tw_masters_services.docx",
-        "fileName":"tw_masters_services.docx"
+		"title": "OEE Calculation",
+		"description": "DIN standard for calculating the OEE.",
+		"fileDownloadLink": "../../../assets/manuals/DIN.docx",
+        "fileName":"DIN_Followd_By_Smart.docx"
 	},
 	{
 		"title": "Multilines",
-		"description": "All Master abc abc xyz abc abc xyz abc abc xyz abc abc xyz abc abc xyz abc abc xyz",
-		"fileDownloadLink": "../../../assets/manuals/tw_masters_services.docx",
-        "fileName":"tw_masters_services.docx"
+		"description": "Supervisor Screen",
+		"fileDownloadLink": "../../../assets/manuals/Supervisor_Screen_Training.docx",
+        "fileName":"Supervisor_Screen_Training.docx"
 	}
 ]
