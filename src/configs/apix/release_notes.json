@@ -1,10 +1,35 @@
 [
 	{
-		"date": "2021-07-28",
-		"itemRelease": "<ul><li>Coffee</li><li>Milk</li><li>Sugar</li></ul>"
+		"date": "2021-07-31",
+		"itemRelease": "<ul><li>Layout in changeover report.</li><li>Changeover finish based on batch count not shift count</li><li>Reject TIME not accounted in Net operating time (Productive time should be 0 during changeover)</li><li>Average speed is shown when running time is greater than 15 minutes in the Dashboard.</li><li>In Supervisor screen 'current mode' to read as 'Line Status'</li><li>Block tag from PLC is inaccurate, so need to AND with Executing to get right meaning</li><li>Shift Live dashboard correct performance loss Tag (occour when good count negative)</li><li>All reports are part of single report section and will be shown with Line selection filter.</li><li>For Management, Day-wise, Output reports, Charts downloaded will include Line and Date.</li><li>Addition of User Administrator screens with all changes - AD Login, creation of users, assignment of roles.</li><li>New user roles for  administrator(Manager-Admin), manager(Man_ager1),supervisor and view(ReportsView_only) only defined in the system.</li><li>User Admin added in Menu - Visible only to role(Manager-Admin) assigned to the user & will open in next tab.</li><li>Breadcrumb navigation reduced to line & line is not clickable.</li></ul>"
 	},
 	{
-		"date": "2021-07-29",
-		"itemRelease": "<ul><li>Ghee</li><li>Salt</li><li>Sugar</li></ul>"
+		"date": "2021-07-03",
+		"itemRelease": "<ul><li>Pie chart in management & day wise report to be corrected.</li><li>Management-v2 charts now include, selected Line, date on downloading.</li></ul>"
+	},
+	{
+		"date": "2021-07-01",
+		"itemRelease": "<ul><li>Fixed : Changeover report which was not showing data of Last day of Month.</li></ul>"
+	},
+	{
+		"date": "2021-06-30",
+		"itemRelease": "<ul><li>Addition of New Line - 07 and 03.</li></ul>"
+	},
+	{
+		"date": "2021-06-27",
+		"itemRelease": "<ul><li>Addition of Email Functionality Early batchend, batchend, Gateway2server error, Edge to gateway error</li></ul>"
+	},
+	{
+		"date": "2021-06-25",
+		"itemRelease": "<ul><li>Fixed the bug 'very 1st evetn b4 CO, was going to the next batch'</li><li>Multiline report, date was missing and added that</li><li>Management report V2 (Hidden )</li><li>Event history in Multiline ( Hidden )</li></ul>"
+	},
+	{
+		"date": "2021-06-20",
+		"itemRelease": "<ul><li>Enhancement : Average Speed formula is updated.</li><li>Bug: Intermittent issue of early batch end and changeover finish has been resolved.</li><li>Enhancement : Day wise report has been updated with new Tab design, drag drop issues has been resolved.  </li><li>Enhancement : Addition of Tablets in Output reports.</li><li>Enhancement : Only Faults will be shown for cause selection in the Dashboard.</li><li>Handling of Multiple request at same instant of time.</li><li>Duplicate Request issues - Duplicate PO, Wrong Theoritical time etc.</li></ul>"
+	},
+	{
+		"date": "2021-06-13",
+		"itemRelease": "<ul><li>Bug : Event History Pie chart showing incorrect percentage has been resolved.</li><li>Enhancement : Left Menu has been enhanced.</li><li>Enhancement : Shift End and Batch End report, alignment/position of the elements</li><li>Average speed formula has been updated.</li><li>Label changes for Lines to include Line/Hall/Category</li><li>Deployment of User Admin Module</li><li>Frequent Logout Issues</li><li>Bug: Breadcrumb are now working on page refresh.</li></ul>"
 	}
 ]
+

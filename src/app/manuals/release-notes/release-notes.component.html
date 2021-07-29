@@ -12,8 +12,7 @@
             <th mat-header-cell [hidden]="displayedColumnsAs[dc]?.visible" *matHeaderCellDef mat-sort-header
                 style="color: white;">
                 {{displayedColumnsAs[dc]?.DN}}</th>
-            <td mat-cell [hidden]="displayedColumnsAs[dc]?.visible" *matCellDef="let element">
-                {{element[dc]}}
+            <td mat-cell [hidden]="displayedColumnsAs[dc]?.visible" *matCellDef="let element" [innerHtml]="element[dc]">
             </td>
         </ng-container>
         
@@ -25,6 +24,6 @@
         No records found
     </div>
     <div>
-        <mat-paginator [pageSizeOptions]="[10, 20, 40]"></mat-paginator>
+        <mat-paginator [pageSizeOptions]="[40, 80, 120]"></mat-paginator>
     </div>
 </div>
