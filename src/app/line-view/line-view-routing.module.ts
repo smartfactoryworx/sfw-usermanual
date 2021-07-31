@@ -15,7 +15,7 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('../manuals/manuals.module').then((m) => m.ManualsModule),
-        data: { breadcrumb: 'Masters' },
+        data: { breadcrumb: 'manuals' },
       },
     ]
   }
